@@ -9,8 +9,8 @@ const data = [
    
   ];
 
-const width = 1400;
-const height = 600;
+const width = 1200;
+const height = 700;
 const margin = { top: 50, bottom: 50, left: 50, right: 50};
 
 const svg = d3.select('#d3-container')
@@ -26,12 +26,12 @@ const x = d3.scaleBand()
 
 const y = d3.scaleLinear()
     .domain([0, 10000000])
-    .range([height - margin.bottom, margin.top])
+    .range([height - margin.bottom, margin.top]);
 
 
 svg 
     .append('g')
-    .attr('fill', 'royalblue')
+    .attr('fill', 'turquoise')
     .selectAll('rect')
     .data(data.sort((a, b) => d3.descending(a.amount, b.amount)))
     .join('rect')
@@ -43,7 +43,8 @@ svg
 function yAxis(g) {
   g.attr("transform", `translate(${margin.left}, 0)`)
     .call(d3.axisLeft(y).ticks(null, data.format))
-    .attr("font-size", '20px')
+    .attr("font-size", '16px')
+    .attr('color', 'deeppink')
 }
 
 function xAxis(g) {

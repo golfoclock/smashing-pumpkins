@@ -1,7 +1,19 @@
 html {
-    background-image: url('img/mc.jpeg');
+    background-image: url('img/pumpkins.jpeg');
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
+}
+
+h1 {
+    color: #ff0080;
+    text-align: center;
+}
+
+svg {
+    display: block;
+    margin: auto;
+    border: 3px solid white;
 }
