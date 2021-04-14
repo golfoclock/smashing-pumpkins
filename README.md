@@ -1,4 +1,5 @@
-# Smashing Pumpkins Top Album Sales
+
+[Smashing Pumpkins & Data Visualization](https://golfoclock.github.io/smashing-pumpkins/)
 
 ## Tech
  - Javascript
