@@ -1,5 +1,5 @@
 <center>
-![FigName](/imgpumpkins.jpg)
+![FigName](img/pumpkins.jpg)
 </center>
 
 # Smashing Pumpkins Top Album Sales
