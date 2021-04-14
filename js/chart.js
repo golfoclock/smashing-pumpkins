@@ -9,9 +9,9 @@ const data = [
  
 ];
 
-const width = 1200;
-const height = 700;
-const margin = { top: 50, bottom: 50, left: 100, right: 50};
+const width = 900;
+const height = 500;
+const margin = { top: 30, bottom: 30, left: 100, right: 25};
 
 const svg = d3.select('#d3-container')
   .append('svg')
@@ -29,7 +29,7 @@ const y = d3.scaleLinear()
 
 svg 
   .append('g')
-  .attr('fill', '#d8a604')
+  .attr('fill', '#ffda99',)
   .selectAll('rect')
   .data(data.sort((a, b) => d3.descending(a.amount, b.amount)))
   .join('rect')
